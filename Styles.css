@@ -1,0 +1,182 @@
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fcfcfc;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden; /* Elimina la barra de desplazamiento horizontal */
+    box-sizing: border-box;
+}
+
+/* Header con logo y barra de búsqueda */
+header {
+    display: flex;
+    justify-content: center; /* Centra todo el contenido dentro del header */
+    align-items: center;
+    margin: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header img {
+    width: 80px; /* Ajusta el tamaño del logo */
+    margin-right: 20px; /* Espacio entre el logo y la barra de búsqueda */
+}
+
+.search-bar {
+    position: relative;
+    width: 100%;
+    max-width: 400px; /* Ampliamos el ancho máximo de la barra de búsqueda */
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px 45px 10px 15px; /* Aumentamos el padding derecho a 45px para la lupa */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
+}
+
+.search-bar img {
+    position: absolute;
+    right: 10px; /* Posiciona la lupa a la derecha sin que se recorte */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px; /* Ajusta el tamaño de la lupa */
+    height: 18px; /* Ajusta el tamaño de la lupa */
+    object-fit: contain; /* Asegura que la imagen de la lupa no se deforme */
+}
+
+/* Links de navegación */
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1a0dab;
+    font-size: 14px;
+    margin: 0 10px;
+}
+
+/* Sección de bienvenida */
+.welcome-section {
+    background-color: #eaf3ff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 15px;
+    border: 1px solid #070707;
+    width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+.welcome-section h1 {
+    color: #3366cc;
+    font-size: 20px;
+}
+
+.welcome-section p {
+    font-size: 14px;
+    color: #333;
+}
+
+.welcome-section a {
+    text-decoration: none;
+    color: #3366cc;
+    margin: 0 5px;
+}
+
+/* Sección de artículos */
+.article-section {
+    text-align: left;
+    border: 1px solid #070707;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px 0;
+    width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+.article-section h2 {
+    font-size: 18px;
+    color: #030a18;
+}
+
+.article-section p {
+    font-size: 14px;
+    color: #3366cc;
+}
+
+/* Footer con los logos */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    margin-top: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer img {
+    width: 100px;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .search-bar {
+        max-width: 100%;
+    }
+
+    .welcome-section h1 {
+        font-size: 18px;
+    }
+
+    .article-section h2 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        width: 60px;
+    }
+
+    .search-bar input {
+        padding: 8px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .welcome-section h1 {
+        font-size: 16px;
+    }
+
+    .welcome-section p,
+    .article-section p {
+        font-size: 12px;
+    }
+
+    footer img {
+        width: 80px;
+    }
+}
+
+
+

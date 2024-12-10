@@ -1,0 +1,133 @@
+/* Estilos globales */
+* {
+    box-sizing: border-box;
+    margin: 0; /* Eliminar márgenes */
+    padding: 0; /* Eliminar relleno */
+}
+
+html, body {
+    height: 100%; /* Asegurar que el body ocupe toda la altura */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf3ff; /* Fondo de la página */
+    display: flex;
+    justify-content: center; /* Centrar contenido horizontalmente */
+    align-items: center; /* Centrar contenido verticalmente */
+}
+
+/* Sección de perfil */
+.profile-section {
+    background-color: #ffffff; /* Color de fondo blanco para el perfil */
+    border-radius: 10px; /* Esquinas redondeadas */
+    width: 100%; /* Ancho total */
+    height: 100%; /* Altura total para ocupar toda la página */
+    max-width: 400px; /* Ancho máximo */
+    padding: 20px; /* Espacio interior */
+    position: relative; /* Para posicionar elementos dentro */
+    overflow: hidden; /* Ocultar desbordamiento */
+}
+
+/* Barra superior */
+.top-bar {
+    width: 100%; /* Ancho total */
+    display: flex;
+    justify-content: flex-end; /* Alinear a la derecha */
+    padding: 10px 0; /* Espacio interior */
+    position: absolute; /* Posicionamiento absoluto */
+    top: 0; /* En la parte superior */
+    left: 0; /* Alineado a la izquierda */
+    background-color: transparent; /* Fondo transparente */
+}
+
+.close-icon {
+    width: 20px; /* Ancho del icono */
+    height: 20px; /* Alto del icono */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+}
+
+/* Imagen del perfil */
+.profile-pic {
+    width: 100px; /* Ancho de la imagen del perfil */
+    height: 100px; /* Alto de la imagen del perfil */
+    border-radius: 50%; /* Esquinas redondeadas para imagen circular */
+    margin: 60px auto 10px; /* Margen superior ajustado para no tapar la barra de cerrar */
+}
+
+h1 {
+    font-size: 22px; /* Tamaño del título */
+    color: #1a1a1a; /* Color del texto */
+    margin: 10px 0; /* Espacio arriba y abajo */
+}
+
+.location {
+    display: flex; /* Usar flexbox para alineación */
+    align-items: center; /* Alinear verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    font-size: 14px; /* Tamaño de la fuente */
+    color: #666; /* Color del texto */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+.location-icon {
+    width: 12px; /* Ancho del icono de ubicación */
+    height: 12px; /* Alto del icono de ubicación */
+    margin-right: 5px; /* Espacio entre icono y texto */
+}
+
+/* Opciones de perfil */
+.options {
+    border-top: 1px solid #ccc; /* Línea superior */
+    border-bottom: 1px solid #ccc; /* Línea inferior */
+    padding: 10px 0; /* Espacio interior */
+}
+
+.option {
+    display: flex; /* Usar flexbox para alineación */
+    align-items: center; /* Alinear verticalmente */
+    padding: 10px 0; /* Espacio interior */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+    border-top: 1px solid #ccc; /* Línea superior para cada opción */
+    font-size: 16px; /* Tamaño de la fuente */
+    color: #1a1a1a; /* Color del texto */
+}
+
+.option img {
+    width: 20px; /* Ancho de la imagen de opción */
+    height: 20px; /* Alto de la imagen de opción */
+    margin-right: 10px; /* Espacio entre imagen y texto */
+}
+
+.option:first-child {
+    border-top: none; /* Sin línea superior para el primer elemento */
+}
+
+/* Ajustes */
+.settings {
+    display: flex; /* Usar flexbox para alineación */
+    align-items: center; /* Alinear verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    padding: 15px 0; /* Espacio interior */
+    font-size: 16px; /* Tamaño de la fuente */
+    color: #1a1a1a; /* Color del texto */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+}
+
+.settings img {
+    width: 20px; /* Ancho de la imagen de ajustes */
+    height: 20px; /* Alto de la imagen de ajustes */
+    margin-right: 10px; /* Espacio entre imagen y texto */
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+    .profile-section {
+        width: 100%; /* Ocupar todo el ancho en pantallas pequeñas */
+        margin: 0; /* Sin margen */
+    }
+}
+
+
+
+
